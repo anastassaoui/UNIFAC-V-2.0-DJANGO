@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimization Input</title>
+</head>
+<body>
+    <h1>Optimization Input</h1>
+    <form action="/results/" method="post">
+        {% csrf_token %}
+        <label for="Xa">Xa:</label>
+        <input type="text" id="Xa" name="Xa"><br><br>
+
+        <label for="D_AB_exp">D_AB_exp:</label>
+        <input type="text" id="D_AB_exp" name="D_AB_exp"><br><br>
+
+        <label for="T">T:</label>
+        <input type="text" id="T" name="T"><br><br>
+
+        <label for="lambda_a">Lambda_a:</label>
+        <input type="text" id="lambda_a" name="lambda_a"><br><br>
+
+        <label for="lambda_b">Lambda_b:</label>
+        <input type="text" id="lambda_b" name="lambda_b"><br><br>
+
+        <label for="q_a">q_a:</label>
+        <input type="text" id="q_a" name="q_a"><br><br>
+
+        <label for="q_b">q_b:</label>
+        <input type="text" id="q_b" name="q_b"><br><br>
+
+        <label for="D_AB0">D_AB0:</label>
+        <input type="text" id="D_AB0" name="D_AB0"><br><br>
+
+        <label for="D_BA0">D_BA0:</label>
+        <input type="text" id="D_BA0" name="D_BA0"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

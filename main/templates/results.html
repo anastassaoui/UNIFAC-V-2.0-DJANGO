@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimization Results</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Optimization Results</h1>
+    <p><strong>a_AB_opt:</strong> {{ a_AB_opt }}</p>
+    <p><strong>a_BA_opt:</strong> {{ a_BA_opt }}</p>
+    <p><strong>D_AB_opt:</strong> {{ D_AB_opt }}</p>
+    <p><strong>Error:</strong> {{ error }}</p>
+
+    <h2>Plot</h2>
+    <div id="plot"></div>
+
+    <script>
+        // Render the plot using Plotly
+        var plotDiv = document.getElementById('plot');
+        var plotData = {{ plot_json | safe }};
+        Plotly.newPlot(plotDiv, plotData.data, plotData.layout);
+    </script>
+</body>
+</html>
