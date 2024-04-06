@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#9p4-g^cal=9fbk(gxeb@w$)xiex+9bn065jyy-$9=4#n0-ie$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myproject-djnago.onrender.com']
+ALLOWED_HOSTS = ['unifac-by-django-hafsa.onrender.com']
 
 
 
